@@ -3,6 +3,8 @@ package com.goyo.rumsegar
 import android.os.Bundle
 import android.widget.LinearLayout
 import android.content.Intent
+import android.net.Uri
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -24,6 +26,23 @@ class BugarSehatActivity : AppCompatActivity() {
         btnProfil.setOnClickListener {
             val intent = Intent(this, ProfilActivity::class.java)
             startActivity(intent)
+        }
+
+        val btnInfoKelas = findViewById<Button>(R.id.btnInfoKelas)
+        btnInfoKelas.setOnClickListener {
+            val noHp ="6282161965317"
+            val pesan = "Halo, saya berminat join kelas Anda. Tolong info kelasnya!"
+            val url = "https://api.whatsapp.com/send?phone=$noHp&text=$pesan"
+            val intent = Intent(Intent.ACTION_VIEW).setData(Uri.parse(url))
+            startActivity(intent)
+        }
+
+        val btnMaps = findViewById<Button>(R.id.btnMaps)
+        btnMaps.setOnClickListener {
+            val gmmIntentUri = Uri.parse("geo:0,0?q=Jl. Setia Budi No.75, Helvetia, Kec. Medan Helvetia, Kota Medan, Sumatera Utara 20117, Indonesia")
+            val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
+            mapIntent.setPackage("com.google.android.apps.maps")
+            startActivity(mapIntent)
         }
 
 

@@ -132,7 +132,7 @@
                 android:fontFamily="@font/lato"
                 android:text="Serba-serbi makanan kesehatan, diet menurunkan/menaikkan Berat Badan, diet medis seperti kolesterol, diabetes, asam lambung/GERD, dan lainnya. Hasil diskusi bersama para pakar di bidang kesehatan, dengan tujuan membantu Anda mengatur pola makan yang lebih sehat sesuai dengan kondisi kesehatan."
                 android:textColor="@color/black"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:gravity="center"
                 android:background="@color/white"
                 android:padding="10dp"
