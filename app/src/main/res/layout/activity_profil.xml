@@ -123,7 +123,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvEmail"
+                android:id="@+id/tvInstansi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="6dp"
@@ -147,9 +147,32 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center">
-                <ImageButton android:id="@+id/btnWhatsapp" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_wa" android:background="@android:color/transparent" android:adjustViewBounds="true" android:scaleType="fitCenter" android:contentDescription="WhatsApp"/>
-                <ImageButton android:id="@+id/btnInstagram" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_ig" android:background="@android:color/transparent" android:contentDescription="Instagram" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:scaleType="fitCenter"/>
-                <ImageButton android:id="@+id/btnFacebook" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_fb" android:background="@android:color/transparent" android:contentDescription="Facebook" android:scaleType="fitCenter"/>
+                <ImageButton android:id="@+id/btnWhatsapp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_wa"
+                    android:background="@android:color/transparent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="WhatsApp"/>
+                <ImageButton
+                    android:id="@+id/btnInstagram"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_ig"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Instagram"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="fitCenter"/>
+                <ImageButton
+                    android:id="@+id/btnFacebook"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_fb"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Facebook"
+                    android:scaleType="fitCenter"/>
             </LinearLayout>
 
         </LinearLayout>
